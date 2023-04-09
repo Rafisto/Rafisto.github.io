@@ -1,3 +1,4 @@
+import { darkScrollbar } from "@mui/material";
 import createTheme from "@mui/material/styles/createTheme";
 
 export const AppTheme = createTheme({
@@ -18,6 +19,12 @@ export const AppTheme = createTheme({
         fontFamily: "Open Sans"
     },
     components: {
+        MuiCssBaseline: {
+            styleOverrides: {
+                body: darkScrollbar(),
+                scrollbarWidth: "thin",
+            },
+        },
         MuiIconButton: {
             styleOverrides: {
                 root: {
@@ -25,5 +32,5 @@ export const AppTheme = createTheme({
                 }
             }
         },
-    }
-})
+    },
+});

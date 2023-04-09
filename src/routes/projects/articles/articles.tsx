@@ -1,10 +1,17 @@
 import React from 'react'
+import { useParams } from 'react-router-dom';
+import Article from './article';
+import ArticleList from './articleList';
 
-type Props = {}
-
-const Articles = (props: Props) => {
+const Articles = () => {
+  const { url } = useParams();
   return (
-    <div>Articles</div>
+    ((url)
+      ?
+      <Article url={url} />
+      :
+      <ArticleList />
+    )
   )
 }
 

@@ -4,6 +4,7 @@ import ElectronicsSection from './electronicsSection';
 import ProjectsSection from './projectsSection';
 import AccomplishmentsSection from './accomplishmentsSection';
 import Contact from '../contact/contact';
+import Gallery from './gallery';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <ElectronicsSection />
       <AccomplishmentsSection />
       <ProjectsSection />
+      <Gallery />
       <Contact />
     </div>
   )

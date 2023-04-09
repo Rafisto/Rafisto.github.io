@@ -23,7 +23,7 @@ const WindowWrap = ({ children, name, maxWidth, invertColor, sx, start, ms, noPa
         : <Typography variant="subtitle1" sx={{ marginTop: "1px", fontFamily: "monospace", color: "transparent" }}>. </Typography>;
     return (
         <Box maxWidth={mWidth} margin="auto">
-            <Box sx={sx} className="gformpadding" style={{padding:(noPadding)?"0":"inherit"}}>
+            <Box sx={sx} className="gformpadding" style={{ padding: (noPadding) ? "0" : "inherit" }}>
                 <Box>
                     {displayName}
                 </Box>

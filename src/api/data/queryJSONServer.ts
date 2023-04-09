@@ -16,7 +16,7 @@ export const QueryJSON = ({ queryUrl }: QueryProps) => {
 
 export const QueryMarkdownText = ({ queryUrl }: QueryProps) => {
     const { isLoading, isError, data, error, refetch } = useQuery('TextQuery', () => {
-        return fetch(queryUrl)
+        return fetch(queryUrl + ".md")
             .then(res => res.text())
             .then((data) => data.replaceAll('<br/>', '\n'))
     })

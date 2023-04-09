@@ -10,7 +10,6 @@ type AppProps = {
 
 const App = ({ children }: AppProps) => {
     return (
-
         <React.Fragment>
             <div style={{ overflowX: "hidden" }}>
                 <img className="jumbomove" src="jumbo.png" alt="Home" style={{ zIndex: "-1", pointerEvents: "none", position: "fixed", objectFit: "cover", height: "100vh", width: "120%", objectPosition: "0 100%" }} />

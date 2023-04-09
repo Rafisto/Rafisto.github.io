@@ -1,10 +1,11 @@
 import React from 'react'
+import ProjectsSection from '../home/projectsSection'
 
 type Props = {}
 
 const Projects = (props: Props) => {
   return (
-    <div>Projects</div>
+    <ProjectsSection />
   )
 }
 

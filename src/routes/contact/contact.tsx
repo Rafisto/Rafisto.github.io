@@ -3,14 +3,15 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
-import { Box, Divider, ListItemButton, Typography } from '@mui/material';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import { Box, Divider, Grid, ListItemButton, Typography } from '@mui/material';
 import T from '../../localization/T';
 import WindowWrap from '../../layout/components/window/windowWrap';
 import PanelStyledLink from '../../style/panelStyledLink';
 
 const contact = [
   {
-    name: 'GitHub Rafist0',
+    name: 'GitHub Rafisto',
     link: 'https://github.com/Rafisto',
     icon: <GitHubIcon />
   },
@@ -28,6 +29,11 @@ const contact = [
     name: 'Instagram @rafist0',
     link: 'https://www.instagram.com/rafist0/',
     icon: <InstagramIcon />
+  },
+  {
+    name: 'Facebook Rafał Włodarczyk',
+    link: 'https://www.facebook.com/Rafist0',
+    icon: <FacebookIcon />
   },
   {
     name: 'Email',
@@ -49,11 +55,11 @@ const Contact = () => {
         <Box sx={{ padding: "20px" }}>
           <Typography style={{ textAlign: "center" }} variant="h4">{T("toolbar.contact")}</Typography>
           <Divider sx={{ marginBlock: "20px" }} />
-          <div style={{ display: "flex" }}>
+          <Grid container spacing={1}>
             {contact.map((item: ContactItem, index: number) => (
-              <PanelStyledLink key={index} name={item.name} link={item.link} icon={item.icon} />
+            <PanelStyledLink key={index} name={item.name} link={item.link} icon={item.icon} />
             ))}
-          </div>
+          </Grid>
         </Box>
       </WindowWrap>
     </Box>

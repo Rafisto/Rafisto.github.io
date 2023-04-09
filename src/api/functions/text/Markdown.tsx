@@ -6,7 +6,6 @@ import rehypeKatex from 'rehype-katex';
 import "katex/dist/katex.min.css";
 import Data from '../../data/Data';
 import WindowWrap from '../../../layout/components/window/windowWrap';
-import { Link } from 'react-router-dom';
 import LinkIcon from '@mui/icons-material/Link';
 import { Typography } from '@mui/material';
 import StyledLink from '../../../style/styledLink';
@@ -24,7 +23,7 @@ function MarkdownImage(props: MarkdownImageProps) {
       <WindowWrap name={alt}>
         {(props.src) ?
           (
-            <img style={{ margin: "auto", display: "block", maxWidth: "100%", maxHeight: "100%" }} alt={alt} src={Data.fetchArticleContentImage + src?.split('.').splice(0, src?.split('.').length - 2).join('.') + "/" + src} />
+            <img style={{ width: "100%", maxHeight: "100%" }} alt={alt} src={Data.fetchArticleContentImage + src} />
           ) :
           (
             <Typography>{src}</Typography>
@@ -43,7 +42,7 @@ interface MarkdownLinkProps {
 function MarkdownLink(props: MarkdownLinkProps) {
   const href = (props.href) ? (props.href) : "Link has a missing property 'href'";
   const title = (props.title) ? (props.title) : "Link has a missing property 'title'";
-  return ( 
+  return (
     <>
       {(props.href) ? (
         <StyledLink name={title} link={href} icon={<LinkIcon />} />

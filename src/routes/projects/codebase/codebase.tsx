@@ -1,10 +1,11 @@
 import React from 'react'
+import SectionBeingCreatedAlert from '../../../style/sectionBeingCreatedAlert'
 
 type Props = {}
 
 const Codebase = (props: Props) => {
   return (
-    <div>Codebase</div>
+    <SectionBeingCreatedAlert />
   )
 }
 export default Codebase
