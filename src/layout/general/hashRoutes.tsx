@@ -4,7 +4,7 @@ import Articles from "../../routes/projects/articles/articles";
 import Poems from "../../routes/projects/poems/poems";
 import Codebase from "../../routes/projects/codebase/codebase";
 import Accomplishments from "../../routes/accomplishments/accomplishments";
-import Electronics from "../../routes/electronics/electronics";
+import Electronics from "../../routes/projects/electronics/electronics";
 import Links from "../../routes/links/links";
 import Projects from "../../routes/projects/projects";
 import App from "../../app";

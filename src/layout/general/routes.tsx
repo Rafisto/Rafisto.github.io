@@ -20,11 +20,11 @@ export const Routes = [
         link: '/accomplishments',
         icon: <WorkspacePremiumIcon />
     },
-    // {
-    //     name: 'toolbar.electronics',
-    //     link: '/electronics',
-    //     icon: <ElectricBoltIcon />
-    // },
+    {
+        name: 'toolbar.electronics',
+        link: '/electronics',
+        icon: <ElectricBoltIcon />
+    },
     {
         name: 'toolbar.contact',
         link: '/contact',

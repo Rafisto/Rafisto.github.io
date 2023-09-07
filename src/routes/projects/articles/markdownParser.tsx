@@ -4,7 +4,7 @@ import remarkMath from 'remark-math';
 import remarkGfm from 'remark-gfm'
 import rehypeKatex from 'rehype-katex';
 import "katex/dist/katex.min.css";
-import Data from '../../data/Data';
+import APILinks from '../../../api/data/apiLinks';
 import WindowWrap from '../../../layout/components/window/windowWrap';
 import LinkIcon from '@mui/icons-material/Link';
 import { Typography } from '@mui/material';
@@ -23,7 +23,7 @@ function MarkdownImage(props: MarkdownImageProps) {
       <WindowWrap name={alt}>
         {(props.src) ?
           (
-            <img style={{ width: "100%", maxHeight: "100%" }} alt={alt} src={Data.fetchArticleContentImage + src} />
+            <img style={{ width: "100%", maxHeight: "100%" }} alt={alt} src={APILinks.fetchArticleContentImage + src} />
           ) :
           (
             <Typography>{src}</Typography>

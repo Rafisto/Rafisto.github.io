@@ -1,14 +1,14 @@
 import React from 'react'
-import { QueryMarkdownText } from '../../api/data/queryJSONServer';
-import Data from '../../api/data/Data';
-import Markdown from '../../api/functions/text/Markdown';
+import { QueryMarkdownText } from '../../api/data/markdownQuery';
+import APILinks from '../../api/data/apiLinks';
+import Markdown from '../projects/articles/markdownParser';
 import WindowWrap from '../../layout/components/window/windowWrap';
 import { Box, Typography } from '@mui/material';
 import { T, Polish } from '../../localization/T';
 import ForeignLanguageAlert from '../../style/foreignLanguageAlert';
 
 const Accomplishments = () => {
-  const { isLoading, isError, data, error, refetch } = QueryMarkdownText({ queryUrl: Data.fetchAccopmlishments });
+  const { isLoading, isError, data, error, refetch } = QueryMarkdownText({ queryUrl: APILinks.fetchAccopmlishments });
   return (
     <div>
       {!Polish() && <ForeignLanguageAlert TKey="alert.translationpending" />}
