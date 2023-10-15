@@ -16,3 +16,12 @@
     animation: jumbomove 20s ease-in-out;
     animation-iteration-count: infinite;
 }
+
+.parallax { 
+    height:100vh;
+    background-image: url("/jumbo.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

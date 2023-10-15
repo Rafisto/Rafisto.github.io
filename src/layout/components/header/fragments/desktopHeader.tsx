@@ -12,7 +12,7 @@ const DesktopHeader = () => {
         <HideOnScroll>
             <AppBar sx={{ background: "#000000e0" }} enableColorOnDark>
                 <Toolbar className="static_toolbar">
-                    <Typography sx={{ flexGrow: 1 }}>Rafał Włodarczyk</Typography>
+                    <Typography sx={{ flexGrow: 1 }} component={Link} to={"/"} style={{textDecoration:"none",color:"white"}}>Rafał Włodarczyk</Typography>
                     {Routes.map((button, index) => {
                         return (
                             <IconButton key={`navbtn-${index}`} component={Link} to={button.link} color="inherit" aria-label={button.name} size="medium">

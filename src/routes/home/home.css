@@ -2,15 +2,14 @@
     .bmain {
         margin-block: 10px;
         padding-block: 10px;
-        padding-bottom: 30px;
         padding-inline: 0px;
     }
 }
 
 @media only screen and (min-width: 600px) {
     .bmain {
-        margin-block: 100px;
-        padding-block: 40px;
+        margin-block: 10px;
+        padding-block: 20px;
         padding-inline: 100px;
     }
 }
@@ -24,11 +23,12 @@
     }
 }
 
-.bmain {
-    background: #009bff;
-    background: linear-gradient(148deg, rgba(0, 40, 233, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 40, 233, 1) 100%);
-    border-block: 1px solid #009bff;
-}
+/* Currently unused - window inset gradient */
+/* .bmain { */
+    /* background: #009bff; */
+    /* background: linear-gradient(148deg, rgba(0, 40, 233, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 40, 233, 1) 100%); */
+    /* border-block: 1px solid #009bff; */
+/* } */
 
 .bmsg {
     display: flex;

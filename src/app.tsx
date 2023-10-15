@@ -11,8 +11,7 @@ type AppProps = {
 const App = ({ children }: AppProps) => {
     return (
         <React.Fragment>
-            <div style={{ overflowX: "hidden" }}>
-                <img className="jumbomove" src="jumbo.png" alt="Home" style={{ zIndex: "-1", pointerEvents: "none", position: "fixed", objectFit: "cover", height: "100vh", width: "120%", objectPosition: "0 100%" }} />
+            <div className="parallax" style={{ overflowX: "hidden" }}>
                 <Header />
                 <Box sx={{ marginTop: "85px" }}>
                     {children}

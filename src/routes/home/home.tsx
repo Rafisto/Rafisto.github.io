@@ -8,13 +8,13 @@ import Gallery from './gallery';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <ElectronicsSection />
       <AccomplishmentsSection />
       <ProjectsSection />
       <Gallery />
       <Contact />
-    </div>
+    </>
   )
 }
 

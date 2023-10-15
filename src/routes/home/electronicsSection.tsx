@@ -21,7 +21,7 @@ const ElectronicsSection = () => {
           <Grid item md={6} sm={12} xs={12}>
             <Box margin="auto" style={{ display: "flex", flexDirection: "column", height: "100%" }}>
               <Box className="bmsg" maxWidth="sm" margin="auto">
-                <Typography variant="h3" sx={{ paddingBlock: "80px" }}><TypeText>{T("jumbo.electronics.classes")}</TypeText></Typography>
+                <Typography variant="h4" sx={{ paddingBlock: "80px", textTransform:"uppercase" }}><TypeText>{T("jumbo.electronics.classes")}</TypeText></Typography>
                 <Typography align="justify">{T("jumbo.electronics.desc1")} <br /><br /> {T("jumbo.electronics.desc2")}</Typography>
               </Box>
               <Box style={{ display: "flex", width: "100%", height: "100%" }}>

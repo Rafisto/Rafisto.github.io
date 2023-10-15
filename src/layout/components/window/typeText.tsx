@@ -22,8 +22,9 @@ const TypeText = ({children, ms, start}: TypeTextProps) => {
         return () => clearInterval(interval);
     });
 
+    const renderedText = (children !== undefined) ? children.substring(0,text) : "";
     return (
-        <span>{(children !== undefined) ? children.substring(0,text) : ""}</span>
+        <span>{renderedText}</span>
     )
 }
 
