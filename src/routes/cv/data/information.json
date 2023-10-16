@@ -1,0 +1,73 @@
+[
+    {
+        "title": "Podsumowanie",
+        "description": {
+            "title": "",
+            "content": "Wysoce zmotywowany student informatyki algorytmicznej z pasją do technologii, znaczącymi wynikami w nauce z fizyki, matematyki i informatyki. Poszukuję praktyczngo doświadczenia w sektorze IT aby przyczynić się do rozwoju innowacyjnych rozwiązań."
+        }
+    },
+    {
+        "title": "Edukacja",
+        "description": [
+            {
+                "title": "Szkoła wyższa [październik 2023 - ]",
+                "content": "Politechnika Wrocławska - Informatyka Algorytmiczna W4N"
+            },
+            {
+                "title": "Szkoła średnia [wrzesień 2019 - maj 2023]",
+                "content": "Akademickie Liceum Ogólnokształcące Politechniki Wrocławskiej"
+            }
+        ]
+    },
+    {
+        "title": "Doświadczenie",
+        "description": [
+            {
+                "title": "Wrocławskie Centrum Sieciowo-Superkomputerowe [sierpień 2023 - ]",
+                "content": "Od sierpnia bieżącego roku pracuję jako referent w WCSS. Do moich zadań należy programowanie, montaż serwerów oraz pomoc w organizacji bieżących wydarzeń."
+            },
+            {
+                "title": "Wykłady z elektroniki w ALO PWr [listopad 2022 - ]",
+                "content": "Od roku 2022 prowadzę zajęcia z elektroniki w ALO PWr, rozwijając kompetencje elektroniczne uczestników. Cykl zajęć obejmuje prototypowanie i wytwarzanie urządzeń elektronicznych."
+            }
+        ]
+    },
+    {
+        "title": "Osiągnięcia",
+        "description": [
+            {
+                "title": "Organizacja międzynarodowego konkursu CTF Cybertron [26-28.09.2023]",
+                "content": "Współtworzyłem dwa z dwudziestu zadań konkursowych, utworzyłem zasób repozytoriów, oraz wdrożyłem wszystkie przeznaczone zadania na infrastrukturę kubernetes, moderowałem system ticketowy oraz pisałem skrypty pomocnicze CI."
+            },
+            {
+                "title": "Laureat Ogólnopolskiego Konkursu Studium Talent [13.03.2023]",
+                "content": "Uzyskując na egzaminie z Fizyki wynik 95%, otrzymałem ocenę bardzo dobrą w konkursie. Umożliwiła mi ona przyjęcie na studia z pominięciem wzkaźnika rekrutacyjnego."
+            },
+            {
+                "title": "Projekt autorskiej strony internetowej [2021 - ]",
+                "content": "Prowadzę autorską stronę internetową, na której umieszczam artykuły, osiągnięcia, zasoby kodu oraz moją twórczość artystyczną. W tym momencie layout jest dostępny w 3 językach."
+            }
+        ]
+    },
+    {
+        "title": "Umiejętności",
+        "description": [
+            {
+                "title": "Certyfikat Harvard CS50P [07.2023]",
+                "content": "Ukończyłem kurs programowania Harvard CS50 w języku Python."
+            },
+            {
+                "title": "Certyfikat EFSET 85/100 [08.2022]",
+                "content": "Uzyskałem wynik 85/100 - C2 Proficient w EF Standard English Test."
+            },
+            {
+                "title": "Tworzenie stron internetowych",
+                "content": "Tworzę strony zawierające backend, frontend oraz bazy danych. Używam docker oraz k8s, jestem zaznajomiony z podstawowymi bibliotekami z zakresu web development."
+            },
+            {
+                "title": "Projektowanie układów elektronicznych",
+                "content": "Projektuję systemów IoT w oparciu o popularne mikrokontrolery. Posługuję się systemem Linux. Rozwijam się w zakresie programowania w języku C."
+            }
+        ]
+    }
+]

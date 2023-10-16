@@ -9,6 +9,7 @@ import Links from "../../routes/links/links";
 import Projects from "../../routes/projects/projects";
 import App from "../../app";
 import Home from "../../routes/home/home";
+import CV from "../../routes/cv/CV";
 
 const UnwrappedRoutes =
     [
@@ -67,15 +68,28 @@ const UnwrappedRoutes =
         {
             path: '/contact',
             element: <Contact />
+        },
+        {
+            path: '/cv',
+            element: <CV/>
         }
     ]
 
 
 export const HashRoutes = createHashRouter(
-    UnwrappedRoutes.map((route) => (
-        {
-            path: route.path,
-            element: <App>{route.element}</App>
+    UnwrappedRoutes.map((route) => {
+        if (route.path != '/cv') {
+            return {
+                path: route.path,
+                element: <App>{route.element}</App>
+            }
         }
-    ))
+        else {
+            return {
+                path: route.path,
+                element: route.element
+            }
+        }
+    }
+    )
 )
