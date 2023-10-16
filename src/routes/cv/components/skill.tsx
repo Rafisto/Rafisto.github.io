@@ -45,14 +45,7 @@ const Skill = ({ skill }: SkillProp) => {
                     href={(item as unknown as LinkType).href}
                     sx={LinkStyle}
                 >
-                    <GlitchText
-                        text={item.name}
-                        style={{
-                            fontSize: "1.5rem",
-                            textAlign: "left",
-                            marginInline: "18%",
-                        }}
-                    />
+                    <Typography variant="h5" sx={{color:"white", textShadow:"2px 2px 10px rgba(255, 255, 255, 1);"}}>{item.name}</Typography>
                 </Link>
             );
         } else if (item.type == "Skill") {
