@@ -2,7 +2,7 @@ import React from 'react'
 import { Box } from '@mui/material'
 import Header from './layout/components/header/header'
 import Footer from './layout/components/footer/footer'
-import './App.css';
+import './app.css';
 
 type AppProps = {
     children: React.ReactNode

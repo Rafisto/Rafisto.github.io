@@ -8,6 +8,7 @@ import { Box, Divider, Grid, ListItemButton, Typography } from '@mui/material';
 import T from '../../localization/T';
 import WindowWrap from '../../layout/components/window/windowWrap';
 import PanelStyledLink from '../../style/panelStyledLink';
+import Availability from './availability';
 
 const contact = [
   {
@@ -60,6 +61,7 @@ const Contact = () => {
             <PanelStyledLink key={index} name={item.name} link={item.link} icon={item.icon} />
             ))}
           </Grid>
+          <Availability/>
         </Box>
       </WindowWrap>
     </Box>
