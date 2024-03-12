@@ -17,7 +17,6 @@ interface ArticleList {
 const ArticleList = () => {
     const navigate = useNavigate();
     const { isLoading, isError, data } = QueryJSON({ queryUrl: Data.fetchArticles });
-    const [poems, setPoems] = useState<ArticleList[]>();
     const [search, setSearch] = useState<String>("");
 
     const resetSearch = () => {
@@ -59,7 +58,8 @@ const ArticleList = () => {
                             </TableRow>
                         </TableHead>
                         <TableBody>
-                            {data && data.sort().map((data: ArticleList) => {
+                            {isLoading ? <div>Loading...</div> : 
+                            ((typeof data[Symbol.iterator] === 'function') && (data.sort().map((data: ArticleList) => {
                                 return data.title.toLowerCase().includes(search.toLowerCase()) || data.description.toLowerCase().includes(search.toLowerCase()) ?
                                     <TableRow key={data.id} onClick={() => articleRedirect(data.url)} sx={{ textDecoration: "none", cursor: "pointer" }}>
                                         <TableCell component="th" scope="row">{data.id}</TableCell>
@@ -67,7 +67,8 @@ const ArticleList = () => {
                                         <TableCell>{data.date}</TableCell>
                                         <TableCell>{data.description}</TableCell>
                                     </TableRow> : null;
-                            })}
+                            }
+                            )))}
                         </TableBody>
                     </Table>
                 </TableContainer>

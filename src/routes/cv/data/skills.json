@@ -2,39 +2,29 @@
     {
         "title": "Kontakt",
         "content": [
+            " ",
+            "rafal.piotr.wlodarczyk@gmail.com",
             "+48 795 425 363",
             " ",
-            "Wrocław, Granitowa 22, 55-080",
-            " ",
-            "rafal.piotr.wlodarczyk@gmail.com"
+            "Wrocław, Polska"
         ]
     },
     {
         "title": "Strona Internetowa",
-        "content": [{
-            "type": "Link",
-            "name": "rafisto.github.io",
-            "href": "https://rafisto.github.io"
-        }]
+        "content": [
+            {
+                "type": "Link",
+                "name": "rafisto.github.io",
+                "href": "https://rafisto.github.io"
+            }
+        ]
     },
     {
         "title": "Umiejętności Językowe",
         "content": [
-            {
-                "type": "Skill",
-                "name": "Polski",
-                "level": 100
-            },
-            {
-                "type": "Skill",
-                "name": "Angielski",
-                "level": 85
-            },
-            {
-                "type": "Skill",
-                "name": "Hiszpański",
-                "level": 50
-            }
+            "🇵🇱 Polski C2",
+            "🇬🇧 English C1",
+            "🇩🇪 Deutsch B1+"
         ]
     },
     {
@@ -47,13 +37,13 @@
             },
             {
                 "type": "Skill",
-                "name": "Typescript",
-                "level": 70
+                "name": "Docker",
+                "level": 75
             },
             {
                 "type": "Skill",
-                "name": "C",
-                "level": 50
+                "name": "Kubernetes",
+                "level": 65
             },
             {
                 "type": "Skill",
@@ -62,21 +52,21 @@
             },
             {
                 "type": "Skill",
-                "name": "LINUX",
+                "name": "React",
                 "level": 70
             },
             {
                 "type": "Skill",
-                "name": "UX",
-                "level": 50
+                "name": "Unix",
+                "level": 60
             }
         ]
     },
     {
         "title": "Zainteresowania",
         "content": [
+            "Gitara",
             "Elektronika",
-            "Gra na gitarze",
             "Literatura piękna"
         ]
     }
